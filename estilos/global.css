@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins , sans-serif;
+    text-decoration: none;
+
+
+}
+
+
+
+header {
+
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 30px;
+  
+    
+    
+
+}
+
+
+
+header  > .logo {
+
+    display: flex;
+    gap: 10px;
+  
+}
+
+
+header  > .logo .logo-texto p {
+
+    color: #2F86D6;
+    font-size: 12px;
+}
+
+
+
+header >  .menu-navegacao > nav > ul > li  {
+
+    list-style-type: none;
+}
+
+header > .menu-navegacao > nav > ul > li > a {
+
+    color:black;
+}
+
+header >  .menu-navegacao > nav > ul {
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+
+}
+
+header > .logo img{
+
+    width: 50px;
+}
+
+.servico{
+
+    background-color: #2F86D6;
+}
+
+main > .servico {
+
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+main > .servico > .servico-texto{
+
+    padding: 0px 20px;
+    
+    
+}
+
+main > .servico > .servico-texto > h1{
+
+    color: white;
+    font-weight:500;
+}
+
+main > .servico > .servico-texto > p {
+
+    padding: 20px 0px;
+    color: white;
+
+
+}
+
+main > .hospede {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #23303E;
+    color: white;
+    padding: 20px 20px;
+    align-items: center;
+}
+
+main > .hospede > .hospede-texto > h2{
+
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+main > .hospede > .hospede-texto > p{
+
+    font-size: 15px;
+}
+
+main > .hospede > .hospede-link > h4{
+
+  background-color: #2F86D6;
+  padding: 10px 10px 10px 15px;
+  border-radius: 3px;
+
+}
+
+main > .hospede > .hospede-link > h4 > img{
+
+    position: relative;
+    top: 3px;
+    right: 3px;
+}
+
+
+
+main > .engrenagem > .engrenagem-titulo {
+
+    text-align: center;
+    margin: 50px 0px 40px 0px;
+}
+
+main > .engrenagem > .engrenagem-titulo mark {
+
+    background-color: transparent;
+    color: #2F86D6;
+    font-weight: 700;
+
+}
+
+main > .engrenagem > .engrenagem-info{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main > .engrenagem  {
+
+    text-align: center;
+    height: 500px;
+}
+
+main > .engrenagem > .engrenagem-info  img{
+
+    width: 130px;
+}
+
+main > .hospede-tabela {
+
+    background-color: #F1F3F7;
+    
+}
+
+main > .engrenagem > .engrenagem-info > .engrenagem-image {
+
+    
+    margin: 50px 30px;  
+
+}
+
+main > .engrenagem > .engrenagem-info > .nuvem-image {
+
+   
+    margin: 50px 30px;  
+
+}
+
+main > .engrenagem > .engrenagem-info > .headset-image {
+
+    
+    margin: 50px 30px;  
+
+}
+
+/* parei na secao da tabela  */
+
+    
