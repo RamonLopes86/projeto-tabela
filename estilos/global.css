@@ -2,19 +2,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    margin:0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: poppins , sans-serif;
+    font-family: poppins, sans-serif;
     text-decoration: none;
-
+    
+   
 
 }
 
 
 
-header {
+header > .fat{
 
     display: flex;
     flex-direction: row;
@@ -22,23 +23,61 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 30px 30px;
-  
+}
+
+ #menu-cel > div{
+
+    
+    text-align: center;
+    display:none;
+   
     
     
 
 }
 
+header > #menu-cel > div {
+
+    padding: 8px;
+    background-color:#62a1db;
+    
+}
+
+header > #menu-cel > div a{
+
+    display: block;
+  
+}
+
+header > #menu-cel > div a {
+
+    color: white;
+    
+}
 
 
-header  > .logo {
+
+header > #menu-cel > div:hover{
+
+    background-color: white;
+
+    
+}
+
+header > #menu-cel > div a:hover{
+
+    color: black;
+}
+
+header> .fat >.logo {
 
     display: flex;
     gap: 10px;
-  
+
 }
 
 
-header  > .logo .logo-texto p {
+header> .fat >.logo .logo-texto p {
 
     color: #2F86D6;
     font-size: 12px;
@@ -46,17 +85,17 @@ header  > .logo .logo-texto p {
 
 
 
-header >  .menu-navegacao > nav > ul > li  {
+header> .fat >.menu-navegacao>nav>ul>li {
 
     list-style-type: none;
 }
 
-header > .menu-navegacao > nav > ul > li > a {
+header > .fat >.menu-navegacao>nav>ul>li>a {
 
-    color:black;
+    color: black;
 }
 
-header >  .menu-navegacao > nav > ul {
+header> .fat > .menu-navegacao>nav>ul {
 
     display: flex;
     flex-direction: row;
@@ -65,40 +104,40 @@ header >  .menu-navegacao > nav > ul {
 
 }
 
-header > .logo img{
+header> .fat >.logo img {
 
     width: 50px;
 }
 
-.servico{
+.servico {
 
     background-color: #2F86D6;
 }
 
-main > .servico {
+main>.servico {
 
     align-items: center;
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
-    
+
 
 }
 
-main > .servico > .servico-texto{
+main>.servico>.servico-texto {
 
     padding: 0px 20px;
-    
-    
+
+
 }
 
-main > .servico > .servico-texto > h1{
+main>.servico>.servico-texto>h1 {
 
     color: white;
-    font-weight:500;
+    font-weight: 500;
 }
 
-main > .servico > .servico-texto > p {
+main>.servico>.servico-texto>p {
 
     padding: 20px 0px;
     color: white;
@@ -106,7 +145,7 @@ main > .servico > .servico-texto > p {
 
 }
 
-main > .hospede {
+main>.hospede {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -116,27 +155,27 @@ main > .hospede {
     align-items: center;
 }
 
-main > .hospede > .hospede-texto > h2{
+main>.hospede>.hospede-texto>h2 {
 
     font-size: 20px;
     font-weight: 500;
 
 }
 
-main > .hospede > .hospede-texto > p{
+main>.hospede>.hospede-texto>p {
 
     font-size: 15px;
 }
 
-main > .hospede > .hospede-link > h4{
+main>.hospede>.hospede-link>h4 {
 
-  background-color: #2F86D6;
-  padding: 10px 10px 10px 15px;
-  border-radius: 3px;
+    background-color: #2F86D6;
+    padding: 10px 10px 10px 15px;
+    border-radius: 3px;
 
 }
 
-main > .hospede > .hospede-link > h4 > img{
+main>.hospede>.hospede-link>h4>img {
 
     position: relative;
     top: 3px;
@@ -145,13 +184,13 @@ main > .hospede > .hospede-link > h4 > img{
 
 
 
-main > .engrenagem > .engrenagem-titulo {
+main>.engrenagem>.engrenagem-titulo {
 
     text-align: center;
     margin: 50px 0px 40px 0px;
 }
 
-main > .engrenagem > .engrenagem-titulo mark {
+main>.engrenagem>.engrenagem-titulo mark {
 
     background-color: transparent;
     color: #2F86D6;
@@ -159,52 +198,159 @@ main > .engrenagem > .engrenagem-titulo mark {
 
 }
 
-main > .engrenagem > .engrenagem-info{
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
 
-main > .engrenagem  {
+
+main>.engrenagem {
 
     text-align: center;
-    height: 500px;
+    /* height: 500px; */
+
+
 }
 
-main > .engrenagem > .engrenagem-info  img{
+main>.engrenagem>.engrenagem-info {
+    width: 80%;
+    margin: 0px auto 40px auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+
+main>.engrenagem>.engrenagem-info p {
+
+    width: 90%;
+    margin: 20px auto;
+
+}
+
+main>.engrenagem>.engrenagem-info img {
 
     width: 130px;
 }
 
-main > .hospede-tabela {
+main>.hospede-tabela {
 
     background-color: #F1F3F7;
-    
-}
-
-main > .engrenagem > .engrenagem-info > .engrenagem-image {
-
-    
-    margin: 50px 30px;  
 
 }
 
-main > .engrenagem > .engrenagem-info > .nuvem-image {
+main>.engrenagem>.engrenagem-info>.engrenagem-image,
+.nuvem-image,
+.headset-image {
+
+
+    margin: 50px 0px;
+
+}
+
+/* sessao da tabela */
+
+th{
+
+    height: 250px;
+    
+}
+
+.hospede-tabela{
+
+    width: 100%;
+    padding: 0px 0px 70px 0px;
+}
+
+.hospede-tabela > .bloco-tabela > table , tr > .linha-thead {
+
+    border-right: 1px solid lightgray;
+
+}
+
+.hospede-tabela > .bloco-tabela > table{
+
+    
+    box-shadow:  0px 0px 15px 8px  #157ad88c;
+    border-radius:5px;
+    overflow: hidden;
+}
+
+
+
+.hospede-tabela > .bloco-tabela > table > tbody > tr:nth-child(odd){
+
+    background-color: rgba(128, 128, 128, 0.185);
+    border: none;
+}
+
+.hospede-tabela > h1 {
+
+    text-align: center;
+    padding: 50px 0px;
+}
+
+.hospede-tabela > .bloco-tabela > table {
 
    
-    margin: 50px 30px;  
+    border-collapse: collapse;
+    max-width: 1000px;
+    height: 500px;
+    margin: 0px auto ;
+    text-align: center;
+    
+}
+
+
+
+
+.hospede > table > tr , td , th  {
+
+    
+    border-collapse: collapse;
+    
 
 }
 
-main > .engrenagem > .engrenagem-info > .headset-image {
+table > thead > tr > th {
 
-    
-    margin: 50px 30px;  
-
+    padding: 0px 30px;
 }
 
-/* parei na secao da tabela  */
+table > thead > tr > th > .tabela-texto-baixo{
 
+    font-size:13px;
+    width: 80%;
+    margin: 0px auto;
+    color: rgb(190, 190, 190);
+    font-weight: normal;
+}
+
+.hospede-tabela> .bloco-tabela > table>thead>tr>th>img {
+
+    width: 120px;
+}
+
+
+/* media querry */
+
+/* @media (max-width:855px){
+
+    #menu-cel > div {
+       
+        display: block;
+       
     
+        
+    }
+
+  
+
+    .menu-navegacao{
+
+        display: none;
+    }
+
+
+
+} */

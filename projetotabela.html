@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/global.css">
-    <link rel="stylesheet" href="estilos/mobilie.css">
+    <link rel="stylesheet" href="estilos/mobilie.css" media="screen" >
+    <link rel="stylesheet" href="estilos/global.css"  media="screen">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Alpha Tech </title>
 </head>
+
 <body>
     <header>
-        
-            <div class="logo">
-                <img src="image/logo-icone.png" alt="">
 
+        <div class="fat">
+            <div class="logo">
+                <img src="image/logo-icone.png" alt="imagem do icone ">
                 <div class="logo-texto">
                     <h2>AlfaTec</h2>
                     <p>Solucoes em hospedagem</p>
@@ -28,14 +31,31 @@
                     </ul>
                 </nav>
             </div>
-        
+        </div>
+
+        <section id="menu-cel">
+            <div><a href="#"><span class="material-symbols-outlined">
+                menu
+                </span></a></div>
+            <div><a href="#">INFORMAÇÕES</a></div>
+            <div><a href="#">PLANOS</a></div>
+            <div><a href="#">PREÇOS</a></div>
+            <div><a href="#">CONTATO</a></div>
+     
+     
+         </section>
+
     </header>
+ 
     <main>
+      
         <section class="servico">
             <div class="servico-texto">
                 <p>Simples - Facil de Usar - 10x mais rápido</p>
                 <h1>O melhor serviço de <br>hospedagem para seu site</h1>
-                <p>Obtenha a maior velocidade para o seu site. <br>Não perca mais clietes por causa de lentidão na sua <br> hospedagem</p>
+                <p>Obtenha a maior velocidade para o seu site. <br>Não perca mais clietes por causa de lentidão na sua
+                    <br> hospedagem
+                </p>
             </div>
 
             <div class="servico-img">
@@ -54,16 +74,17 @@
                 <h4>
                     <img src="image/icone-foguete.png" alt="imagem foguete">
                     TABELA DE PREÇOS
-                    
 
-                </h4> 
+
+                </h4>
             </div>
         </section>
 
 
         <section class="engrenagem">
             <div class="engrenagem-titulo">
-                <h1>Existem diversos serviços de hospedagem de sites. <br> Porque você deve <mark>nos escolher?</mark></h1>
+                <h1>Existem diversos serviços de hospedagem de sites. <br> Porque você deve <mark>nos escolher?</mark>
+                </h1>
             </div>
             <div class="engrenagem-info">
 
@@ -87,38 +108,37 @@
 
         </section>
 
-        <section class="hospede-tabela"> <!--ficar atento para colocar o h1 e a table dentro de uma div se for necessário-->
+        <section class="hospede-tabela">
 
-                <h1>Pague Somente pelo que for usar.Sem cobranças adcionais </h1>
 
+            <h1>Pague Somente pelo que for usar.Sem cobranças adcionais </h1>
+
+            <div class="bloco-tabela">
                 <table>
                     <thead>
-                        <tr>
-                            <th>
-                                PESSOAL
+                        <tr >
+                            <th class="linha-thead">
+                                <p class="tabela-texto">PESSOAL</p>
                                 <img src="image/pessoal-icone.png" alt="imgem de usuário">
-                                <p>Indicado para uso pessoal</p>
+                                <p class="tabela-texto-baixo">Indicado para uso pessoal</p>
                             </th>
-                            
-                            <th>
-                                PROFISSIONAL
+                            <th class="linha-thead">
+                                <P class="tabela-texto">PROFISSIONAL</P>
                                 <img src="image/equipe-icone.png" alt="imagem da equipe">
-                                <p>Indicado para profissionais de TI.</p>
+                                <p class="tabela-texto-baixo">Indicado para profissionais de TI.</p>
                             </th>
-                            <th>
-                                EMPRESARIAL
+                            <th class="linha-thead">
+                                <P class="tabela-texto">EMPRESARIAL</P>
                                 <img src="image/empresa-icone.png" alt="imagem de uma empresa">
-                                <p>Indicado para empresas</p>
+                                <p class="tabela-texto-baixo">Indicado para empresas</p>
                             </th>
                             <th>
-                                BIG TECHS
+                                <P class="tabela-texto">BIG TECHS</P>
                                 <img src="image/big-tech.png" alt="imagem de um globo terrestre">
-                                <p>indicado para grandes empresas</p>
+                                <p class="tabela-texto-baixo">indicado para grandes empresas</p>
                             </th>
                         </tr>
-                  
                     </thead>
-
                     <tbody>
                         <tr>
                             <td>1 Usuário</td>
@@ -126,28 +146,24 @@
                             <td>25 usuários</td>
                             <td>50 Usuários</td>
                         </tr>
-
                         <tr>
-                            <td>1 Domínio Grátis</td>
-                            <td>2 Domínios Grátis</td>
-                            <td>2 Domínios Grátis</td>
+                            <td class="linha-thead">1 Domínio Grátis</td>
+                            <td class="linha-thead">2 Domínios Grátis</td>
+                            <td class="linha-thead">2 Domínios Grátis</td>
                             <td>3 Domínios Grátis</td>
                         </tr>
-
                         <tr>
                             <td>200GB SSD espaço</td>
                             <td>500GB SSD espaço</td>
                             <td>1TB SSD espaço</td>
                             <td>2TB SSD espaço</td>
                         </tr>
-
                         <tr>
-                            <td>Ofertas especiais</td>
-                            <td>Ofertas especiais</td>
-                            <td>Ofertas especiais</td>
+                            <td class="linha-thead">Ofertas especiais</td>
+                            <td class="linha-thead">Ofertas especiais</td>
+                            <td class="linha-thead">Ofertas especiais</td>
                             <td>Ofertas especiais</td>
                         </tr>
-
                         <tr>
                             <td>Suporte Limitado</td>
                             <td>Suporte Ilimitado</td>
@@ -156,6 +172,8 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+
         </section>
 
         <section class="quantidade-pessoas">
@@ -192,4 +210,5 @@
         <span>Desenvolvido por - Ramon da Silva Lopes</span>
     </footer>
 </body>
+
 </html>
