@@ -25,53 +25,63 @@ header > .fat{
     padding: 30px 30px;
 }
 
- #menu-cel > div{
 
-    
+/* menu cel  */
+
+
+
+#menu-cel > .icone{
+
+    display: none;
+    cursor: pointer;
+}
+
+ #menu-cel > .icone , .cel-titulos {
+
     text-align: center;
-    display:none;
-   
-    
-    
-
-}
-
-header > #menu-cel > div {
-
-    padding: 8px;
     background-color:#62a1db;
+   
+ }
+
+
+
+ #menu-cel > .icone >  .material-symbols-outlined  {
+
+    color: rgb(255, 255, 255);
+    padding-top: 5px;
+    line-height: 35px;
     
-}
+ }
 
-header > #menu-cel > div a{
-
-    display: block;
-  
-}
-
-header > #menu-cel > div a {
+ #menu-cel > .cel-titulos > ul > a  {
 
     color: white;
     
-}
+    
+ }
 
-
-
-header > #menu-cel > div:hover{
+ #menu-cel > .cel-titulos > ul li:hover{
 
     background-color: white;
-
-    
-}
-
-header > #menu-cel > div a:hover{
-
     color: black;
-}
+
+ }
+
+ 
+
+ #menu-cel > .cel-titulos > ul > a > li {
+
+    padding: 5px 0px;
+
+ }
+
+
+/* termino do menu cel */
 
 header> .fat >.logo {
 
     display: flex;
+    flex-direction: row;
     gap: 10px;
 
 }
@@ -90,7 +100,15 @@ header> .fat >.menu-navegacao>nav>ul>li {
     list-style-type: none;
 }
 
-header > .fat >.menu-navegacao>nav>ul>li>a {
+header> .fat >.menu-navegacao>nav>ul>li:hover {
+
+    text-decoration: underline 2px black;
+    
+}
+
+
+
+header > .fat >.menu-navegacao>nav>ul>li > a {
 
     color: black;
 }
@@ -109,10 +127,14 @@ header> .fat >.logo img {
     width: 50px;
 }
 
+/* .........MAIN......... */
+
 .servico {
 
     background-color: #2F86D6;
 }
+
+
 
 main>.servico {
 
@@ -151,27 +173,28 @@ main>.hospede {
     justify-content: space-around;
     background-color: #23303E;
     color: white;
-    padding: 20px 20px;
+    padding: 20px 0px;
     align-items: center;
 }
 
 main>.hospede>.hospede-texto>h2 {
 
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 500;
 
 }
 
-main>.hospede>.hospede-texto>p {
+main>.hospede>.hospede-texto > p {
 
-    font-size: 15px;
+    font-size: 0.9rem;
 }
 
-main>.hospede>.hospede-link>h4 {
+main>.hospede>.hospede-link > h4 {
 
     background-color: #2F86D6;
     padding: 10px 10px 10px 15px;
     border-radius: 3px;
+    font-size: 0.9rem;
 
 }
 
@@ -268,14 +291,6 @@ th{
 
 }
 
-.hospede-tabela > .bloco-tabela > table{
-
-    
-    box-shadow:  0px 0px 15px 8px  #157ad88c;
-    border-radius:5px;
-    overflow: hidden;
-}
-
 
 
 .hospede-tabela > .bloco-tabela > table > tbody > tr:nth-child(odd){
@@ -290,24 +305,28 @@ th{
     padding: 50px 0px;
 }
 
+
+
 .hospede-tabela > .bloco-tabela > table {
 
-   
+    overflow: hidden;
     border-collapse: collapse;
     max-width: 1000px;
     height: 500px;
     margin: 0px auto ;
     text-align: center;
+    box-shadow:  0px 0px 15px 8px  #157ad88c;
+    border-radius:5px;
+    
     
 }
-
-
 
 
 .hospede > table > tr , td , th  {
 
     
     border-collapse: collapse;
+    
     
 
 }
@@ -328,29 +347,113 @@ table > thead > tr > th > .tabela-texto-baixo{
 
 .hospede-tabela> .bloco-tabela > table>thead>tr>th>img {
 
-    width: 120px;
+    width: 130px;
+}
+
+/* tarja azul */
+
+main > .quantidade-pessoas{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2F86D6;
+    color: white;
+    padding: 20px 0px;
+
+}
+
+main > .quantidade-pessoas > .quantidade-texto > h1 {
+
+    font-size: 1rem;
+
+}
+
+main > .quantidade-pessoas > .quantidade-link > h4 {
+
+    font-size: 0.9rem;
+    background-color: #23303E;
+    padding: 10px 10px 10px 15px;
+    border-radius: 3px;
+
+
+}
+
+main > .quantidade-pessoas > .quantidade-link > h4 > a > img {
+
+    position: relative;
+    right: 3px;
+    top:3px;
+}
+
+main > .quantidade-pessoas > .quantidade-link > h4 > a {
+
+    color: white;
 }
 
 
-/* media querry */
+/* footer */
 
-/* @media (max-width:855px){
+main > .endereco {
 
-    #menu-cel > div {
-       
-        display: block;
-       
+    text-align: center;
+}
+
+main > .endereco > .endereco-logo{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px 20px 0px;
+    gap: 10px;
+}
+
+
+main > .endereco > .endereco-logo > .endereco-titulos > p{
+
+    font-size: 12px;
+    text-align: left;
+    color: #62a1db;
+}
+
+main > .endereco > .endereco-logo > .endereco-titulos > h2{
+
     
-        
-    }
+    text-align: left;
 
-  
+}
 
-    .menu-navegacao{
+main > .endereco >.endereco-logo > img {
 
-        display: none;
-    }
+    width: 50px;
+}
+
+main > .endereco > .endereco-texto {
+
+    padding: 20px 0px 40px 0px;
+}
+
+main > .endereco > .endereco-texto > ul > li {
+
+    padding-bottom: 10px;
+    font-weight: 500;
+    font-size: 0.92rem;
+    
+}
 
 
+footer{
 
-} */
+    background-color: #F1F3F7;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+footer > span > span {
+
+    color: #2F86D6;
+    font-weight: 500;
+
+}

@@ -5,16 +5,16 @@
 
 
 @media screen and (max-width:855px)  {
+
     
-    header > #menu-cel > div {
+    header > #menu-cel > .icone {
        
         
         display: block;
-        
-
-    
-        
+           
     }
+
+   
 
   
     .menu-navegacao{
@@ -22,6 +22,8 @@
         display: none;
     }
 
+
+    
     
 
 }
