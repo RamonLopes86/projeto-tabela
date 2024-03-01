@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/logo-icone.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos/mobilie.css" media="screen">
     <link rel="stylesheet" href="estilos/global.css" media="screen">
     <link rel="stylesheet"
@@ -15,7 +16,7 @@
 <body onresize="mudou()">
     <header>
 
-        <div class="fat">
+        <div class="fat" id="idfat">
             <div class="logo">
 
                 <img src="image/logo-icone.png" alt="imagem do icone ">
@@ -30,10 +31,10 @@
             <div class="menu-navegacao">
                 <nav>
                     <ul>
-                        <li><a href="#">INFORMAÇÕES</a></li>
-                        <li><a href="#">PLANOS</a></li>
+                        <li><a href="#engrenagem">INFORMAÇÕES</a></li>
+                        <li><a href="#idhospede-tabela">PLANOS</a></li>
                         <li><a href="#">PREÇOS</a></li>
-                        <li><a href="#">CONTATO</a></li>
+                        <li><a href="#idendereco">CONTATO</a></li>
                     </ul>
                 </nav>
             </div>
@@ -55,16 +56,16 @@
             <div class="cel-titulos" id="idcel-titulos">
 
                 <ul>
-                    <a href="#">
+                    <a href="#engrenagem">
                         <li>INFORMAÇÕES</li>
                     </a>
-                    <a href="#">
+                    <a href="#idhospede-tabela">
                         <li>PLANOS</li>
                     </a>
                     <a href="#">
                         <li>PREÇOS</li>
                     </a>
-                    <a href="#">
+                    <a href="#idendereco">
                         <li>CONTATO</li>
                     </a>
                 </ul>
@@ -96,7 +97,7 @@
         </section>
 
         <section class="hospede" id="idhospede">
-            
+
             <div class="hospede-texto">
                 <h2>Hospede o seu site por apenas R$29,00 por Mês</h2>
                 <p>Tambem temos planos gratuitos>adquira já o seu.</p>
@@ -105,8 +106,10 @@
             <div class="hospede-link">
 
                 <h4>
-                    <img src="image/icone-foguete.png" alt="imagem foguete">
-                    TABELA DE PREÇOS
+                    <a href="#">
+                        <img src="image/icone-foguete.png" alt="imagem foguete">
+                        TABELA DE PREÇOS
+                    </a>
 
 
                 </h4>
@@ -114,14 +117,14 @@
         </section>
 
 
-        <section class="engrenagem">
+        <section class="engrenagem" id="engrenagem">
 
             <div class="engrenagem-titulo">
                 <h1>Existem diversos serviços de hospedagem de sites. <br> Porque você deve <mark>nos escolher?</mark>
                 </h1>
             </div>
 
-            <div class="engrenagem-info">
+            <div class="engrenagem-info" id="idengrenagem-info">
 
                 <div class="engrenagem-image">
                     <img src="image/icone-engrenagens.png" alt="imagem de uma engrenagem">
@@ -143,12 +146,12 @@
 
         </section>
 
-        <section class="hospede-tabela">
+        <section class="hospede-tabela" id="idhospede-tabela">
 
 
             <h1>Pague Somente pelo que for usar.Sem cobranças adcionais </h1>
 
-            <div class="bloco-tabela">
+            <div class="bloco-tabela" id="idbloco-tabela">
                 <table>
                     <thead>
                         <tr>
@@ -211,7 +214,8 @@
 
         </section>
 
-        <section class="quantidade-pessoas">
+        <section class="quantidade-pessoas" id="idquantidade-pessoas">
+
             <div class="quantidade-texto">
                 <h1>Mais de 20.000 pessoas confiam na AlfaTech! <br> Seja um deles você Tambem </h1>
             </div>
@@ -226,7 +230,7 @@
             </div>
         </section>
 
-        <section class="endereco">
+        <section class="endereco" id="idendereco">
 
             <div class="endereco-logo">
 
@@ -240,13 +244,22 @@
 
             </div>
 
-            <div class="endereco-texto">
+            <div class="endereco-texto" id="idendereco-texto">
                 <ul>
                     <li>Telefone & WhatsApp : (21) 99999-5555</li>
                     <li>E-mail:suporte@alfatech.com</li>
                     <li>Endereço : Rua Airton Senna,3000 - Barra da Tijuca - Rio de Janeiro</li>
                     <li>&copy Alfatech - Soluçoes em hospedagem - Todos os direitos reservados</li>
                 </ul>
+            </div>
+
+            <div class="seta-cima" id="seta-cima">
+
+                <a href="#idfat">
+                    <img src="image/top-arrow-icon-on-transparent-background-free-png.webp" alt="seta pra cima"><br>
+                    <span>Topo</span>
+                </a>
+
             </div>
 
         </section>
@@ -256,7 +269,8 @@
 
 
     <footer>
-        <span>Desenvolvido por <span>Ramon da Silva Lopes</span></span>
+
+        <span>Desenvolvido por <br><span>Ramon da Silva Lopes</span></span>
     </footer>
 
     <script>
@@ -264,37 +278,37 @@
         let hamburger = document.getElementById('hamburger') /*icone*/
         let menu = document.getElementById('idcel-titulos') /*div com menu*/
         let divhamburger = document.getElementById('idicone')
-        
+
 
         menu.style.display = "none"
 
-        divhamburger.addEventListener('click' , clicouNovamente)
-        
+        divhamburger.addEventListener('click', clicouNovamente)
+
         function clicouNovamente() {
 
             if (menu.style.display == "none") {
-                
+
                 menu.style.display = "block"
-                
+
             } else if (menu.style.display == "block") {
-                
+
                 menu.style.display = "none"
-                
+
 
             }
 
         }
 
-        function mudou(){
+        function mudou() {
 
-            if(window.innerWidth >= 855){
+            if (window.innerWidth >= 855) {
 
-                menu.style.display="none"
+                menu.style.display = "none"
             }
 
         }
 
-       
+
 
 
     </script>

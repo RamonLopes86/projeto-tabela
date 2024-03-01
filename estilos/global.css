@@ -8,7 +8,7 @@
     box-sizing: border-box;
     font-family: poppins, sans-serif;
     text-decoration: none;
-    
+    list-style-type: none;
    
 
 }
@@ -189,19 +189,20 @@ main>.hospede>.hospede-texto > p {
     font-size: 0.9rem;
 }
 
-main>.hospede>.hospede-link > h4 {
+main>.hospede>.hospede-link > h4 > a {
 
     background-color: #2F86D6;
     padding: 10px 10px 10px 15px;
     border-radius: 3px;
     font-size: 0.9rem;
+    color: white;
 
 }
 
-main>.hospede>.hospede-link>h4>img {
+main>.hospede>.hospede-link>h4> a >img {
 
     position: relative;
-    top: 3px;
+    top: 4px;
     right: 3px;
 }
 
@@ -273,7 +274,9 @@ main>.engrenagem>.engrenagem-info>.engrenagem-image,
 
 /* sessao da tabela */
 
-th{
+
+
+.hospede-tabela > .bloco-tabela > table > thead > tr > th{
 
     height: 250px;
     
@@ -305,15 +308,19 @@ th{
     padding: 50px 0px;
 }
 
+.hospede-tabela > .bloco-tabela {
 
+    max-width: 1000px;
+    margin: 0px auto;
+    overflow-x: auto;
+}
 
 .hospede-tabela > .bloco-tabela > table {
 
-    overflow: hidden;
+    overflow-x: hidden;
     border-collapse: collapse;
-    max-width: 1000px;
+    width: 100%;
     height: 500px;
-    margin: 0px auto ;
     text-align: center;
     box-shadow:  0px 0px 15px 8px  #157ad88c;
     border-radius:5px;
@@ -398,6 +405,8 @@ main > .quantidade-pessoas > .quantidade-link > h4 > a {
 main > .endereco {
 
     text-align: center;
+    position: relative;
+    
 }
 
 main > .endereco > .endereco-logo{
@@ -437,10 +446,39 @@ main > .endereco > .endereco-texto {
 
 main > .endereco > .endereco-texto > ul > li {
 
-    padding-bottom: 10px;
-    font-weight: 500;
+    padding-bottom: 20px;
+    font-weight: 600;
     font-size: 0.92rem;
     
+}
+
+.endereco > .seta-cima> a > img {
+
+    width: 35px;
+    
+}
+
+.endereco > .seta-cima {
+
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    padding: 0px 10px;
+    
+      
+}
+
+.endereco > .seta-cima > a > span:hover{
+
+   text-decoration: underline;
+   transition: 800ms;
+}
+
+.endereco > .seta-cima span{
+
+    color: black;
+    font-weight: 600;
+    font-size: 0.8rem;
 }
 
 
@@ -449,11 +487,15 @@ footer{
     background-color: #F1F3F7;
     text-align: center;
     padding: 10px 0px;
+    position: relative;
+   
 }
 
 footer > span > span {
 
     color: #2F86D6;
     font-weight: 500;
+    
 
 }
+

@@ -3,67 +3,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+/* menu navegação */
 
-@media screen and (max-width:855px)  {
+@media screen and (max-width:855px) {
 
-    
-    header > #menu-cel > .icone {
-       
-        
+
+    header>#menu-cel>.icone {
+
+
         display: block;
-           
+
     }
 
-   
-
-  
-    .menu-navegacao{
+    .menu-navegacao {
 
         display: none;
     }
 
-
-
-
 }
 
 @media(max-width:927px) {
-    
-     main >  #idservico {
+
+    main>#idservico {
 
         display: flex;
         flex-direction: column;
-        
+
     }
 
-    main > #idservico > .servico-texto{
+    main>#idservico>.servico-texto {
         padding-top: 30px;
         width: 100%;
         text-align: center;
     }
 
-    main > #idservico > .servico-img{
+    main>#idservico>.servico-img {
 
         text-align: center;
     }
 
-    main > #idservico > .servico-img> img {
+    main>#idservico>.servico-img>img {
 
         width: 100%;
-        
+
     }
 }
 
+/* media tarja azul e tarja preta */
 
 @media screen and (max-width:600px) {
 
-    main > #idhospede {
+    main>#idhospede {
 
         display: flex;
         flex-direction: column;
 
-        /* parei aqui  */
+
+    }
+
+    main>#idhospede>.hospede-texto {
+
+        text-align: center;
+        padding: 10px 10px 20px 10px;
+
+    }
+
+    main>#idhospede>.hospede-texto>h2,
+    p {
+
+        padding: 5px;
+    }
+
+    main>#idquantidade-pessoas {
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main>#idquantidade-pessoas>.quantidade-texto {
+
+        padding: 10px 10px 20px 10px;
+
+    }
+
+    main>#idquantidade-pessoas>.quantidade-texto>h1 {
+
+        font-size: 0.9rem;
+
+    }
+
+
+
+}
+
+/* media engrenagem */
+@media screen and (max-width:560px) {
+
+    main>.engrenagem>.engrenagem-titulo>h1 {
+
+        font-size: 1.29rem;
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    main>.engrenagem>#idengrenagem-info {
+
+        display: flex;
+        flex-direction: column;
+
+
+
     }
 
 }
 
+/* media tabela */
+@media screen and (max-width:783px) {
+
+    main>#idhospede-tabela>#idbloco-tabela>table {
+
+        font-size: 0.8rem;
+
+
+
+    }
+
+    main>#idhospede-tabela>#idbloco-tabela {
+
+        width: 90%;
+        margin: 0px auto;
+
+
+
+    }
+
+}
+
+/* section address */
+
+@media screen and (max-width:540px) {
+
+    main > .endereco > #idendereco-texto > ul > li{
+
+      font-size: 0.8rem;
+      width: 90%;
+      margin: 0px auto;
+      font-weight: 600;
+      
+      
+       
+       
+        
+    }
+
+    main > #idendereco  {
+
+        height: 420px;
+       
+    }
+    
+}
