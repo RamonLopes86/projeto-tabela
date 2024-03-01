@@ -41,4 +41,29 @@
         width: 100%;
         text-align: center;
     }
+
+    main > #idservico > .servico-img{
+
+        text-align: center;
+    }
+
+    main > #idservico > .servico-img> img {
+
+        width: 100%;
+        
+    }
 }
+
+
+@media screen and (max-width:600px) {
+
+    main > #idhospede {
+
+        display: flex;
+        flex-direction: column;
+
+        /* parei aqui  */
+    }
+
+}
+
