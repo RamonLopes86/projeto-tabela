@@ -23,7 +23,22 @@
     }
 
 
-    
-    
 
+
+}
+
+@media(max-width:927px) {
+    
+     main >  #idservico {
+
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    main > #idservico > .servico-texto{
+        padding-top: 30px;
+        width: 100%;
+        text-align: center;
+    }
 }

@@ -12,7 +12,7 @@
     <title>Alpha Tech </title>
 </head>
 
-<body>
+<body onresize="mudou()">
     <header>
 
         <div class="fat">
@@ -79,7 +79,7 @@
 
     <main>
 
-        <section class="servico">
+        <section class="servico" id="idservico">
 
             <div class="servico-texto">
                 <p>Simples - Facil de Usar - 10x mais rápido</p>
@@ -92,6 +92,7 @@
             <div class="servico-img">
                 <img src="image/imagem-banner.png" alt="imagem do banner">
             </div>
+
         </section>
 
         <section class="hospede">
@@ -260,14 +261,12 @@
         let hamburger = document.getElementById('hamburger') /*icone*/
         let menu = document.getElementById('idcel-titulos') /*div com menu*/
         let divhamburger = document.getElementById('idicone')
+        
 
         menu.style.display = "none"
 
-        
-        
         divhamburger.addEventListener('click' , clicouNovamente)
-       
-
+        
         function clicouNovamente() {
 
             if (menu.style.display == "none") {
@@ -282,6 +281,17 @@
             }
 
         }
+
+        function mudou(){
+
+            if(window.innerWidth >= 855){
+
+                menu.style.display="none"
+            }
+
+        }
+
+       
 
 
     </script>
