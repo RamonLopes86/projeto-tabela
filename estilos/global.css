@@ -28,6 +28,12 @@
    }
 }
 
+@keyframes movee {
+    0%{
+        transform: translateX(200px);
+    }
+}
+
 header > .fat > .logo{
 
     animation-name: move;
@@ -37,6 +43,17 @@ header > .fat > .logo{
 
 
 }
+
+header > .fat > .menu-navegacao{
+
+    animation-name: movee;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    
+}
+
+
 
 header > .fat{
 
