@@ -13,7 +13,30 @@
 
 }
 
+@keyframes move {
 
+   from{
+
+    opacity: 0;
+    transform: translateX(200px);
+    
+
+   }
+   to{
+    opacity: 100%;
+    
+   }
+}
+
+header > .fat > .logo{
+
+    animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+
+
+}
 
 header > .fat{
 
